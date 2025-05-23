@@ -65,7 +65,7 @@ h2::after {
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: var(--text-primary);
 }
 
@@ -1074,6 +1074,30 @@ footer::before {
     .projects-grid {
         grid-template-columns: 1fr;
     }
+      .hero {
+    text-align: center;
+    justify-content: center;
+    height: auto;
+    padding: 120px 20px 60px;
+  }
+
+  .hero-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    word-break: break-word;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+
+    
 }
 
 /* ===== Consistent Dark Theme ===== */
