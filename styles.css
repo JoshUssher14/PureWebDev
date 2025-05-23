@@ -256,13 +256,17 @@ nav {
     background: radial-gradient(circle at 20% 50%, rgba(0, 212, 255, 0.1) 0%, rgba(0, 0, 0, 0.9) 70%);
 }
 
+/* Hero Section */
 .hero-content {
-    max-width: 600px;
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  max-width: 600px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  /* REMOVE these from desktop: 
+     align-items: center;
+     text-align: center;
+  */
 }
 
 .hero h1 {
@@ -279,18 +283,18 @@ nav {
 }
 
 /* ==== HERO BUTTONS LAYOUT ==== */
+/* ==== HERO BUTTONS LAYOUT ==== */
 .hero-buttons {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  /* desktop buttons align left by default */
+  justify-content: flex-start;
 }
-
 .hero-buttons .btn {
-    flex: 1 1 200px;
-    max-width: 300px;
+  flex: 1 1 200px;
+  max-width: 300px;
 }
-
 /* About Section */
 .about {
     background: var(--darker-bg);
@@ -554,41 +558,48 @@ footer::before {
     color: var(--text-secondary);
     font-size: 0.9rem;
 }
-
 /* Responsive Styles */
 @media (max-width: 992px) {
-    .about-content {
-        flex-direction: column;
-    }
+  .about-content {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 768px) {
-    h1 {
-        font-size: 2.5rem;
-    }
+  h1 {
+    font-size: 2.5rem;
+  }
 
-    h2 {
-        font-size: 1.8rem;
-    }
+  h2 {
+    font-size: 1.8rem;
+  }
 
-    section {
-        padding: 80px 0;
-    }
+  section {
+    padding: 80px 0;
+  }
 
-    .hero {
-        text-align: center;
-        justify-content: center;
-    }
+  .hero {
+    text-align: center;
+    justify-content: center;
+  }
 
-    .hero-content {
-        align-items: center;
-    }
+  .hero-content {
+    align-items: center;
+    /* and add: */
+    text-align: center;
+  }
+
+  /* <-- Paste your new rules here: */
+  .hero-buttons {
+    justify-content: center;
+  }
+}
 
     /* nav-links/mobile & hamburger already above */
     .projects-grid {
         grid-template-columns: 1fr;
     }
-}
+
 
 /* ===== Consistent Dark Theme ===== */
 :root {
