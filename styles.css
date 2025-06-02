@@ -581,12 +581,16 @@ footer::before {
   .hero {
     text-align: center;
     justify-content: center;
+    padding-top: 140px;
   }
 
   .hero-content {
-    align-items: center;
-    /* and add: */
+     align-items: center;
     text-align: center;
+    margin-top: 40px; /* 👈 Add this to create space under the navbar */
+  }
+    .hero h1 {
+    margin-top: 20px; /* 👈 Optional: extra space directly above the heading */
   }
 
   /* <-- Paste your new rules here: */
